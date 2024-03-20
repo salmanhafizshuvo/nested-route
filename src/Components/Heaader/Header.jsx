@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
+
  
 
 const Header = () => {
     return (
         <div>
             <h2>Navbar</h2>
-            <nav>
-                <a href="/"> Home </a>
-                <a href="/About"> About </a>
-                <a href="/Contract"> Contract Us </a>
+            <nav className=" space-x-3  gap-3  ">
+            <Link to='/'>Home </Link>
+            <Link to='/About'>About </Link>
+            <Link to='/Contract'>Contract </Link>
+            <Link to='/Users'>Users</Link>
+           
             </nav>
         </div>
     );
