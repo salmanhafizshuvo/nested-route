@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-
+import '../../Components/Heaader/Header.css'
  
 
 const Header = () => {
@@ -7,13 +7,12 @@ const Header = () => {
         <div>
             <h2>Navbar</h2>
             <nav className=" space-x-3  gap-3  ">
-            <Link to='/'>Home </Link>
-            <NavLink></NavLink>
-            <Link to='/About'>About </Link>
-            <Link to='/posts'>Posts</Link>
-            <Link to='/Contract'>Contract </Link>
-            <Link to='/Users'>Users</Link>
-           
+            <NavLink to='/'>Home </NavLink>
+            <NavLink to='/users'>Users</NavLink>
+            <NavLink to='/About'>About </NavLink>
+            <NavLink to='/posts'>Posts</NavLink>
+            <NavLink to='/Contract'>Contract </NavLink>
+            
             </nav>
         </div>
     );
